@@ -41,9 +41,10 @@
             justify-content: center;
         }
         header nav a {
-            margin: 0 15px;
-            padding: 10px 15px;
+            margin: 0 10px;
+            padding: 8px 12px;
             transition: background-color 0.3s;
+            font-size: 0.9em; /* Adjust font size for mobile */
         }
         header nav a:hover {
             background-color: #444;
@@ -55,25 +56,25 @@
             background: linear-gradient(135deg, #3b5998, #0088cc);
             color: white;
             text-align: center;
-            padding: 80px 20px;
+            padding: 60px 20px; /* Adjust padding for mobile */
         }
         .hero h1 {
-            font-size: 2.5em;
+            font-size: 2em; /* Adjust font size for mobile */
             margin-bottom: 10px;
         }
         .hero p {
-            font-size: 1.2em;
+            font-size: 1em; /* Adjust font size for mobile */
             margin-top: 0;
         }
 
         /* Projects Section */
         .projects {
-            padding: 40px 20px;
-            max-width: 1100px;
+            padding: 20px; /* Adjust padding for mobile */
+            max-width: 100%; /* Ensure full width on mobile */
             margin: 0 auto;
             display: grid;
-            grid-template-columns: repeat(3, 1fr); /* 3 columns */
-            gap: 20px; /* Add gap between items */
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive columns */
+            gap: 20px;
         }
         .project-card {
             background: white;
@@ -88,40 +89,27 @@
         .project-card h3 {
             background: #222;
             color: white;
-            padding: 15px;
+            padding: 10px; /* Adjust padding for mobile */
             text-align: center;
         }
         .project-card a {
             display: block;
-            padding: 20px;
+            padding: 15px; /* Adjust padding for mobile */
             text-align: center;
             color: #007bff;
             font-weight: bold;
         }
 
-        /* Responsive Design for Projects Section */
-        @media (max-width: 900px) {
-            .projects {
-                grid-template-columns: repeat(2, 1fr); /* 2 columns */
-            }
-        }
-
-        @media (max-width: 600px) {
-            .projects {
-                grid-template-columns: 1fr; /* 1 column */
-            }
-        }
-
         /* Certificates Section */
         .certificates {
             background-color: #f8f9fa;
-            padding: 40px 20px;
+            padding: 30px 20px; /* Adjust padding for mobile */
             text-align: center;
         }
         .certificates a {
-            font-size: 1.2em;
+            font-size: 1.1em; /* Adjust font size for mobile */
             color: #007bff;
-            padding: 10px 20px;
+            padding: 8px 15px; /* Adjust padding for mobile */
             border: 2px solid #007bff;
             border-radius: 5px;
             transition: background-color 0.3s, color 0.3s;
@@ -131,75 +119,51 @@
             color: white;
         }
 
-        /* Responsive Design for Certificates Section */
-        @media (max-width: 900px) {
-            .certificates {
-                grid-template-columns: repeat(2, 1fr); /* 2 columns */
-            }
-        }
-
-        @media (max-width: 600px) {
-            .certificates {
-                grid-template-columns: 1fr; /* 1 column */
-            }
-        }
-
         /* Contact & Social Media */
         .contact {
-            padding: 40px 20px;
+            padding: 30px 20px; /* Adjust padding for mobile */
             text-align: center;
         }
         .social-media {
             display: flex;
             justify-content: center;
-            gap: 15px;
+            gap: 10px; /* Adjust gap for mobile */
             margin-top: 20px;
         }
         .social-media a {
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 50px;
-            height: 50px;
+            width: 40px; /* Adjust size for mobile */
+            height: 40px;
             border-radius: 50%;
             background-color: #007bff;
             color: white;
-            font-size: 1.5em;
+            font-size: 1.2em; /* Adjust font size for mobile */
             transition: transform 0.3s, background-color 0.3s;
         }
         .social-media a:hover {
             transform: scale(1.1);
             background-color: #0056b3;
         }
-        .MyProjects{
-            margin-left: 100px;
-            margin-top: 40px ;
+        .MyProjects {
+            margin-left: 10px; /* Adjust margin for mobile */
+            margin-top: 30px;
         }
 
-        .MyCertificates{
-            margin-left: 100px;
-            margin-top: 40px ;
+        .MyCertificates {
+            margin-left: 10px; /* Adjust margin for mobile */
+            margin-top: 30px;
             margin-bottom: 30px;
         }
-
 
         /* Footer */
         footer {
             background-color: #222;
             color: white;
             text-align: center;
-            padding: 20px 0;
+            padding: 15px 0; /* Adjust padding for mobile */
             margin-top: 40px;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 600px) {
-            .hero h1 {
-                font-size: 2em;
-            }
-            .hero p {
-                font-size: 1em;
-            }
         }
     </style>
 </head>
@@ -218,9 +182,9 @@
     <h1>Welcome to My Portfolio</h1>
     <p>I'm Moustafa Elboghdady, a passionate programmer and student.</p>
 </section>
+
 <h2 class="MyProjects">My Projects</h2>
 <section class="projects" id="projects">
-    
     <div class="project-card">
         <h3>Games Projects</h3>
         <a href="https://github.com/mo2009/Games-projects" target="_blank">View on GitHub</a>
@@ -234,6 +198,7 @@
         <a href="https://github.com/mo2009/Arduino-projects" target="_blank">View on GitHub</a>
     </div>
 </section>
+
 <h2 class="MyCertificates">My Certificates</h2>
 <section class="certificates" id="certificates">
     <p>Check out my <a href="https://www.linkedin.com/in/moustafa-elboghdady-a55a92289?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BYVc3FUhzTOClqyiCSbuoCA%3D%3D" target="_blank">LinkedIn profile</a> for my certifications.</p>
