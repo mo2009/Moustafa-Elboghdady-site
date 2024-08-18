@@ -116,21 +116,19 @@
         .certificates {
             background-color: #f8f9fa;
             padding: 40px 20px;
-            max-width: 1100px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr); /* 3 columns for certificates */
-            gap: 20px;
+            text-align: center;
         }
-        .certificates img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
+        .certificates a {
+            font-size: 1.2em;
+            color: #007bff;
+            padding: 10px 20px;
+            border: 2px solid #007bff;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
         }
-        .certificates img:hover {
-            transform: scale(1.05);
+        .certificates a:hover {
+            background-color: #007bff;
+            color: white;
         }
 
         /* Responsive Design for Certificates Section */
@@ -238,15 +236,7 @@
 </section>
 <h2 class="MyCertificates">My Certificates</h2>
 <section class="certificates" id="certificates">
-    
-    <embed src="1.pdf" type="application/pdf" alt="Certificate 1">
-    <embed src="2.pdf" type="application/pdf" alt="Certificate 2">
-    <embed src="3.pdf" type="application/pdf" alt="Certificate 3">
-    <embed src="4.pdf" type="application/pdf" alt="Certificate 4">
-    <embed src="5.pdf" type="application/pdf" alt="Certificate 5">
-    <embed src="6.pdf" type="application/pdf" alt="Certificate 6">
-    <embed src="7.pdf" type="application/pdf" alt="Certificate 7">
-    <embed src="8.pdf" type="application/pdf" alt="Certificate 8">
+    <p>Check out my <a href="https://www.linkedin.com/in/moustafa-elboghdady-a55a92289?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BYVc3FUhzTOClqyiCSbuoCA%3D%3D" target="_blank">LinkedIn profile</a> for my certifications.</p>
 </section>
 
 <section class="contact" id="contact">
